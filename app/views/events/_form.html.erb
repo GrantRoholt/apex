@@ -1,0 +1,53 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :media_played %><br />
+    <%= f.text_field :media_played %>
+  </div>
+  <div class="field">
+    <%= f.label :phonecall_num %><br />
+    <%= f.text_area :phonecall_num %>
+  </div>
+  <div class="field">
+    <%= f.label :phonecall_date %><br />
+    <%= f.text_area :phonecall_date %>
+  </div>
+  <div class="field">
+    <%= f.label :phonecall_duration %><br />
+    <%= f.text_area :phonecall_duration %>
+  </div>
+  <div class="field">
+    <%= f.label :phonecall_type %><br />
+    <%= f.text_field :phonecall_type %>
+  </div>
+  <div class="field">
+    <%= f.label :ip_address %><br />
+    <%= f.text_area :ip_address %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br />
+    <%= f.text_area :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :long %><br />
+    <%= f.text_area :long %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

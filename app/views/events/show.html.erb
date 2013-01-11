@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Media played:</b>
+  <%= @event.media_played %>
+</p>
+
+<p>
+  <b>Phonecall num:</b>
+  <%= @event.phonecall_num %>
+</p>
+
+<p>
+  <b>Phonecall date:</b>
+  <%= @event.phonecall_date %>
+</p>
+
+<p>
+  <b>Phonecall duration:</b>
+  <%= @event.phonecall_duration %>
+</p>
+
+<p>
+  <b>Phonecall type:</b>
+  <%= @event.phonecall_type %>
+</p>
+
+<p>
+  <b>Ip address:</b>
+  <%= @event.ip_address %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @event.lat %>
+</p>
+
+<p>
+  <b>Long:</b>
+  <%= @event.long %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @event.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

@@ -1,0 +1,39 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Media played</th>
+    <th>Phonecall num</th>
+    <th>Phonecall date</th>
+    <th>Phonecall duration</th>
+    <th>Phonecall type</th>
+    <th>Ip address</th>
+    <th>Lat</th>
+    <th>Long</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.media_played %></td>
+    <td><%= event.phonecall_num %></td>
+    <td><%= event.phonecall_date %></td>
+    <td><%= event.phonecall_duration %></td>
+    <td><%= event.phonecall_type %></td>
+    <td><%= event.ip_address %></td>
+    <td><%= event.lat %></td>
+    <td><%= event.long %></td>
+    <td><%= event.user_id %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event', new_event_path %>

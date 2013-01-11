@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  media_played: MyString
+  phonecall_num: MyText
+  phonecall_date: MyText
+  phonecall_duration: MyText
+  phonecall_type: MyString
+  ip_address: MyText
+  lat: MyText
+  long: MyText
+  user_id: 1
+
+two:
+  media_played: MyString
+  phonecall_num: MyText
+  phonecall_date: MyText
+  phonecall_duration: MyText
+  phonecall_type: MyString
+  ip_address: MyText
+  lat: MyText
+  long: MyText
+  user_id: 1
