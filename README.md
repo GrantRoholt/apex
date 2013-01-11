@@ -1,1 +1,1 @@
-== This is APEX: The Attention Profile EXchange application
+== This is APEX: The Attention Profile EXchange app
