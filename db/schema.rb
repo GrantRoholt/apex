@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130111020409) do
+ActiveRecord::Schema.define(:version => 20130111052025) do
 
   create_table "events", :force => true do |t|
     t.string   "media_played"
@@ -39,9 +39,9 @@ ActiveRecord::Schema.define(:version => 20130111020409) do
     t.string   "email"
     t.string   "first_name"
     t.string   "last_name"
-    t.text     "ssn"
-    t.text     "national_id_number"
-    t.text     "birth_date"
+    t.string   "ssn"
+    t.string   "national_id_number"
+    t.string   "birth_date"
     t.string   "facebook_id"
     t.string   "twitter_id"
     t.string   "linkedin_id"
